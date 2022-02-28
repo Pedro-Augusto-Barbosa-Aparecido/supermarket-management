@@ -1,0 +1,56 @@
+.table-container {
+    width: 100%;
+    height: fit-content;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+}
+
+.first-column {
+    width: 60px;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tables {
+    width: 100%;
+
+}
+
+.tables thead {
+    height: 50px;
+
+    text-align: center;
+
+    /* display: flex; */
+
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+
+.tables thead th {
+    vertical-align: middle;
+
+}
+
+.tables thead th:not(:last-child) {
+    border-right: 2px solid #EEE;
+
+}
+
+.tables thead th:first-child {
+    width: 60px;
+
+}
+
+.tables thead th:nth-child(2) {
+    width: 200px;
+
+}

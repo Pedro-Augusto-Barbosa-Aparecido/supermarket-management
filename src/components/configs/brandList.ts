@@ -27,6 +27,10 @@ export const LIST_PAGE_BRAND = {
             ]
 
         }
+    ],
+    tableHeader: [
+        "Name",
+        "Active"
     ]
 
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import "./globals/reset.css";
+import "./globals/globals.css";
 
 import Header from './components/Header';
 import Menu from './components/Menu';

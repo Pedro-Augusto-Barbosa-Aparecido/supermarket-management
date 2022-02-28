@@ -11,7 +11,7 @@ export default function Routers() {
         <Routes>
             <Route path="/" element={<SubMenus settings={MENUS_SELLS.settings} menus={MENUS_SELLS.menus} />} />
             <Route path="/product" element={<SubMenus settings={MENUS.settings} menus={MENUS.menus} />} />
-            <Route path="/product/brand/" element={<PageList title="Brand List" textInput={LIST_PAGE_BRAND.textInput} selectInput={LIST_PAGE_BRAND.selectInput} />} />
+            <Route path="/product/brand/" element={<PageList tableHeader={LIST_PAGE_BRAND.tableHeader} title="Brand List" textInput={LIST_PAGE_BRAND.textInput} selectInput={LIST_PAGE_BRAND.selectInput} />} />
             <Route path="/expense" element={<SubMenus settings={MENUS_EXPENSES.settings} menus={MENUS_EXPENSES.menus} />} />
         </Routes>
     );

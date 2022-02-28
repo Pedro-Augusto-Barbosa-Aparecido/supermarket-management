@@ -3,6 +3,8 @@ import React from "react";
 
 import "./styles.css";
 
+import Table from "../../../components/Table";
+
 export type InputText = {
     name: string,
     id: string,
@@ -43,6 +45,7 @@ export type PageListProps = {
     textInput: Array<InputText>
     selectInput: Array<InputSelect>
     buttons?: Array<ButtonsForm>
+    tableHeader: Array<string>
 
 }
 
@@ -55,7 +58,7 @@ export default function PageList (props: PageListProps) {
     return (
         <main className="container column-display">
             <h1>{ props.title }</h1>
-            <div className="filter-container">
+            <div className="filter-container default-shadow">
                 <form>
                     <div className="form-filter">
                         {
@@ -99,6 +102,7 @@ export default function PageList (props: PageListProps) {
                     </div>
                 </form>
             </div>
+            <Table name="table" id="table" checkboxColumn actionsColumn header={props.tableHeader} data={[]} />
         </main>
     );
 
