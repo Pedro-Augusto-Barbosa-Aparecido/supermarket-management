@@ -45,7 +45,8 @@ export type PageListProps = {
     textInput: Array<InputText>
     selectInput: Array<InputSelect>
     buttons?: Array<ButtonsForm>
-    tableHeader: Array<string>
+    tableHeader: Array<string>,
+    tableBody: Array<Array<string>>
 
 }
 
@@ -102,7 +103,7 @@ export default function PageList (props: PageListProps) {
                     </div>
                 </form>
             </div>
-            <Table name="table" id="table" checkboxColumn actionsColumn header={props.tableHeader} data={[]} />
+            <Table name="table" id="table" checkboxColumn actionsColumn header={props.tableHeader} data={props.tableBody} />
         </main>
     );
 

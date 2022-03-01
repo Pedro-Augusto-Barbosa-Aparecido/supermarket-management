@@ -31,6 +31,37 @@ export const LIST_PAGE_BRAND = {
     tableHeader: [
         "Name",
         "Active"
+    ],
+    tableBody: [
+        ["Samsung", "Yes"],
+        ["Samsung", "Yes"],
+        ["Samsung", "Yes"],
+        ["Nokia", "Yes"],
+        ["Nokia", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
+        ["Nestle", "Yes"],
     ]
 
 }

@@ -4,7 +4,7 @@
 
     padding: 20px;
 
-    margin-top: 20px;
+    margin: 20px 0;
 
 }
 
@@ -23,7 +23,7 @@
 
 }
 
-.tables thead {
+.tables thead, .tables tbody {
     height: 50px;
 
     text-align: center;
@@ -35,22 +35,112 @@
 
 }
 
-.tables thead th {
+.tables thead th, .tables tbody td {
     vertical-align: middle;
 
 }
 
-.tables thead th:not(:last-child) {
+.tables thead th:not(:last-child), .tables tbody td:not(:last-child) {
     border-right: 2px solid #EEE;
 
 }
 
-.tables thead th:first-child {
+.tables thead th:first-child, .tables tbody td:first-child {
     width: 60px;
 
 }
 
-.tables thead th:nth-child(2) {
+.tables thead th:nth-child(2), .tables tbody td:nth-child(2) {
     width: 200px;
+
+}
+
+.tables tr {
+    height: 50px;
+
+}
+
+.tables tbody tr:nth-child(odd) {
+    background-color: #F3DBDB;
+
+}
+
+.tables tbody tr:hover {
+    background-color: rgba(122, 100, 100, 0.3);
+
+}
+
+.button-action {
+    padding: 5px 6px;
+
+    height: 6px;
+    width: 6px;
+
+    font-size: 13px;
+
+    border-radius: 4px;
+
+}
+
+.edit {
+    background-color: #E5E529B8;
+
+}
+
+.delete {
+    background-color: #e52929b8;
+
+}
+
+.detail {
+    background-color: #298ae5b8;
+
+}
+
+.button-action:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.button-action:hover {
+    cursor: pointer;
+
+    transform: scale(1.2);
+    font-size: 17px;
+
+}
+
+.button-action:active {
+    font-size: 10px;
+    transform: scale(.96);
+
+}
+
+.tables input[type=checkbox] {
+    cursor: pointer;
+
+}
+
+.no-data {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    position: absolute;
+
+    left: -20px;
+    
+    margin-top: 10px;
+
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+    color: #beb6b6b8;
 
 }
