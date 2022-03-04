@@ -7,8 +7,8 @@ import $ from "jquery";
 import axios from "axios";
 
 export default function BrandList() {
-    const [data, setData] = useState<Array<Array<any>>>([]);
-    const [allData, setAllData] = useState<Array<Array<any>>>([]);
+    const [data, setData] = useState<Array<{ id: string, data: any[] }>>([]);
+    const [allData, setAllData] = useState<Array<{ id: string, data: any[] }>>([]);
     const [numberPages, setNumberPages] = useState<number>(1);
     const [numberPerPages, setNumberPerPages] = useState<number>(10);
     const [name, setName] = useState<string>("");
@@ -41,7 +41,7 @@ export default function BrandList() {
         setTotal(response.data.total);
 
         response.data.results.forEach((d: any, i: number) => {
-            aux.push([d.name, d.active ? <i className="bi bi-check-lg"></i> : <i className="bi bi-x-lg"></i>]);
+            aux.push({ id: d.id, data: [d.name, d.active ? <i className="bi bi-check-lg"></i> : <i className="bi bi-x-lg"></i>]});
 
         });
 
@@ -180,7 +180,7 @@ export default function BrandList() {
                                             </div>
                                         </td>
                                         {
-                                            brand.map((_b, i) => {
+                                            brand.data.map((_b, i) => {
                                                 return (
                                                     <td key={i}>
                                                         { _b }
