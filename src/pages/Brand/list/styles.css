@@ -1,0 +1,309 @@
+.filter-container {
+    width: 100%;
+    height: fit-content;
+
+    padding: 20px;
+
+    background-color: #FFF;
+
+    box-shadow: 0px 2px 10px -1px #CFBCBC;
+
+    margin-top: 5px;
+
+    border-radius: 5px;
+
+}
+
+.column-display {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 5px;
+
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.form-filter, .form-container, .form-buttons {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+}
+
+.form-container {
+    flex-direction: column;
+    flex-wrap: initial;
+
+}
+
+.form-buttons {
+    justify-content: flex-end;
+
+}
+
+.input-container {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin: 0 5px;
+
+}
+
+.input-container label {
+    font-size: 20px;
+    font-weight: 500;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.input-container input, .input-container select {
+    outline: none;
+    width: 260px;
+
+    border: 1px solid #937c7c91;
+
+    padding: 10px 20px 10px 10px;
+
+    vertical-align: text-top;
+
+}
+
+.input-container select {
+    text-align: center;
+
+}
+
+.button {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40px;
+
+    padding: 15px;
+
+    background-color: #4d971c;
+    color: white;
+
+    border-radius: 3px;
+
+    margin: 0 5px;
+
+}
+
+.button i {
+    margin-right: 10px;
+
+}
+
+.button p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+}
+
+.button:active {
+    transform: scale(.96);
+
+}
+
+.table-container {
+    width: 100%;
+    height: fit-content;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+}
+
+.first-column {
+    width: 60px;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tables {
+    width: 100%;
+
+}
+
+.tables thead, .tables tbody {
+    height: 50px;
+
+    text-align: center;
+
+    /* display: flex; */
+
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+
+.tables thead th, .tables tbody td {
+    vertical-align: middle;
+
+}
+
+.tables thead th:not(:last-child), .tables tbody td:not(:last-child) {
+    border-right: 2px solid #EEE;
+
+}
+
+.tables thead th:first-child, .tables tbody td:first-child {
+    width: 60px;
+
+}
+
+.tables thead th:nth-child(2), .tables tbody td:nth-child(2) {
+    width: 200px;
+
+}
+
+.tables tr {
+    height: 50px;
+
+}
+
+.tables tbody tr:nth-child(odd) {
+    background-color: #F3DBDB;
+
+}
+
+.tables tbody tr:hover {
+    background-color: rgba(122, 100, 100, 0.3);
+
+}
+
+.button-action {
+    padding: 5px 6px;
+
+    height: 6px;
+    width: 6px;
+
+    font-size: 13px;
+
+    border-radius: 4px;
+
+}
+
+.edit {
+    background-color: #E5E529B8;
+
+}
+
+.delete {
+    background-color: #e52929b8;
+
+}
+
+.detail {
+    background-color: #298ae5b8;
+
+}
+
+.button-action:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.button-action:hover {
+    cursor: pointer;
+
+    transform: scale(1.2);
+    font-size: 17px;
+
+}
+
+.button-action:active {
+    font-size: 10px;
+    transform: scale(.96);
+
+}
+
+.tables input[type=checkbox] {
+    cursor: pointer;
+
+}
+
+.no-data td {
+    border: 0;
+
+}
+
+.bi-check-lg {
+    font-size: 20px;
+
+}
+
+.container-pagination-footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+
+}
+
+.select-per-page {
+    margin-right: 30px;
+
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.select-per-page label {
+    margin-right: 10px;
+
+}
+
+.select-per-page select {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    border: 1px solid #00000021;
+    border-radius: 6px;
+
+    width: 60px;
+
+    text-align: center;
+
+}
+
+.total-data {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+
+    text-align: center;
+    vertical-align: bottom;
+
+    margin-left: 20px;
+
+}

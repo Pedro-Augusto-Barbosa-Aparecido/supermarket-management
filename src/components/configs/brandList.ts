@@ -28,6 +28,7 @@ export const LIST_PAGE_BRAND = {
 
         }
     ],
+    tableActions: true,
     tableHeader: [
         "Name",
         "Active"

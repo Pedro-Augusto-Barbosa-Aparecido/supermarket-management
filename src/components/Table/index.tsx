@@ -5,6 +5,7 @@ import "../Paginator/styles.css";
 import ReactPaginate from "react-paginate";
 
 import { useTable, usePagination } from "react-table";
+import api from "../../services/api";
 
 export type PaginationClickButtonsProps = {
     index: number | null;
@@ -30,16 +31,34 @@ export type TableProps = {
 export default function Table(props: TableProps) {
     const [numberPages, setNumberPages] = useState(1);
     const [numberPerPages, setNumberPerPages] = useState(10);
+    const [response, setResponse] = useState<Array<{name: string, active: boolean, id: string}>>([]);
+
+    async function getData(data: object) {
+        api.get("/brand", { data: {
+            ...data
+        }}).then((data) => {
+            setResponse(data.data.results);
+        });
+
+    }
+
+    useEffect(() => {
+        setTimeout(() => {
+            getData({ name: "", active: true }).then(() => {
+                console.log("terminou")
+            });
+        }, 10);
+    }, [])
 
     const data = useMemo(
         () =>
-        props.data.map((d, i) => {
+        response.map((d, _i) => {
             return {
-            name: `${d[0]}${i}`,
-            active: d[1],
+            name: d.name,
+            active: d.active ? <i className="bi bi-check-lg"></i> : <i className="bi bi-x-lg"></i>,
             };
         }),
-        [props.data]
+        [response]
     );
 
     const columns = useMemo(
@@ -84,7 +103,7 @@ export default function Table(props: TableProps) {
                             {props.checkboxColumn ? (
                                 <th className="">
                                     <div>
-                                    <input className="form-check-input" type={"checkbox"} />
+                                        <input className="form-check-input" type={"checkbox"} />
                                     </div>
                                 </th>
                                 ) : (
@@ -111,7 +130,7 @@ export default function Table(props: TableProps) {
                         <tr {...row.getRowProps()}>
                             <td>
                                 <div>
-                                <input className="form-check-input" type={"checkbox"} />
+                                    <input className="form-check-input" type={"checkbox"} />
                                 </div>
                             </td>
                             <td>
