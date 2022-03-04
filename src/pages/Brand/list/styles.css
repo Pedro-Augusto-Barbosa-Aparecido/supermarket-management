@@ -245,8 +245,26 @@
 
 }
 
-.no-data td {
-    border: 0;
+.no-data {
+    text-align: center;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    height: 60px;
+    padding: 20px;
+
+    vertical-align: middle;
+
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: #000A;
 
 }
 

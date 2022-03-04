@@ -150,7 +150,7 @@ export default function BrandList() {
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody hidden={data.length < 1}>
                         {
                             data.length > 0 ? data.map((brand, index) => {
                                 return (
@@ -198,6 +198,9 @@ export default function BrandList() {
                         }
                     </tbody>
                 </table>    
+                <div hidden={data.length > 0 } id="no-data" className="default-shadow no-data">
+                    <p>{ messageNoData }</p>
+                </div>
                 <div className="container-pagination-footer">
                     <div className="select-per-page">
                         <label htmlFor="num-per-page">Per Page: </label>
