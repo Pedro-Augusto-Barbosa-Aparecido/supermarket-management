@@ -91,6 +91,8 @@
     justify-content: space-between;
     align-items: center;
 
+    text-decoration: none;
+
     height: 40px;
 
     padding: 15px;
@@ -101,6 +103,11 @@
     border-radius: 3px;
 
     margin: 0 5px;
+
+}
+
+.button:hover {
+    color: white;
 
 }
 

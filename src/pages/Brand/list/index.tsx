@@ -6,6 +6,8 @@ import "../../../components/Paginator/styles.css";
 import $ from "jquery";
 import axios from "axios";
 
+import { Link } from "react-router-dom";
+
 export default function BrandList() {
     const [data, setData] = useState<Array<{ id: string, data: any[] }>>([]);
     const [allData, setAllData] = useState<Array<{ id: string, data: any[] }>>([]);
@@ -124,6 +126,10 @@ export default function BrandList() {
                 </div>
                 <hr />
                 <div className="form-buttons">
+                    <Link to={"/product/brand/create"} className="button" id="create-brand">
+                        <i className="bi bi-plus-lg"></i>
+                        <p>Create Brand</p>
+                    </Link>
                     <button className="button" type="submit" id="search" name="search" onClick={(ev) => handleSubmitFilterForm(ev)}>
                         <i className="bi bi-search"></i>
                         <p>Search</p>
