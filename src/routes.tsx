@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import SubMenus from "./components/SubMenus";
 import { MENUS, MENUS_SELLS, MENUS_EXPENSES } from "./components/configs/menus";
 import BrandList from "./pages/Brand/list";
+import NotFound from "./pages/NoFound";
+import ContactUs from "./pages/ContactUs";
 
 export default function Routers() {
     return (
@@ -12,6 +14,8 @@ export default function Routers() {
             <Route path="/product" element={<SubMenus settings={MENUS.settings} menus={MENUS.menus} />} />
             <Route path="/product/brand/" element={<BrandList />} />
             <Route path="/expense" element={<SubMenus settings={MENUS_EXPENSES.settings} menus={MENUS_EXPENSES.menus} />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
     );
 
