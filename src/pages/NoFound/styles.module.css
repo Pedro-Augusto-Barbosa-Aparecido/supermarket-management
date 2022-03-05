@@ -1,0 +1,57 @@
+.title {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+}
+
+.message {
+    margin-top: 3rem;
+       
+}
+
+.message a {
+    text-decoration: none;
+
+}
+
+.text404 {
+    width: 100%;
+
+    text-align: center;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: rgb(62 49 49 / 29%);
+
+    /* DISABLE USER TEXT SELECTION */
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+    -o-user-select:none;
+
+}
+
+.contactUs {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+
+}
+
+.contactUs a {
+    color: rgb(182, 129, 30);
+    
+}
