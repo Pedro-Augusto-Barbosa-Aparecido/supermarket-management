@@ -1,0 +1,137 @@
+.column {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+.title {
+    margin-top: 30px;
+
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+    color: #000A;
+
+}
+
+.message {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    font-size: 20px;
+
+}
+
+.formContainer {
+    margin-top: 3rem;
+    width: 100%;
+
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.containerInput:first-child {
+    margin-top: 0;
+
+}
+
+.label {
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.input {
+    border: 2px solid #0009;
+    border-radius: 4px;
+
+    height: 50px;
+    width: 100%;
+
+    padding: 7px;
+
+}
+
+.inputArea {
+    max-height: 500px;
+    height: 300px !important;
+
+    resize: none;
+
+}
+
+.containerButtons {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 60px;
+    width: 100%;
+
+    padding: 20px;
+    padding-right: 0;
+
+    margin-top: 3px;
+
+}
+
+.button {
+    border: 1px solid #0009;
+    border-radius: 6px;
+
+    padding: 10px;
+
+    width: 200px;
+
+    text-align: center;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button i {
+    margin-right: 10px;
+
+}
+
+.button:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.button:active {
+    transform: scale(.96);
+
+}
+
+.button[type=reset] {
+    background-color: rgb(185, 75, 75);
+
+}
+.button[type=button] {
+    background-color: rgb(100, 161, 156);
+
+}
+.button[type=submit] {
+    background-color: rgb(153, 161, 82);
+
+}
