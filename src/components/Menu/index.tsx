@@ -17,6 +17,10 @@ export default function Menu () {
                 <i className="fa fa-bar-chart"></i>
                 <p>Expenses</p>
             </Link>
+            <Link to={"/contact-us"} className="link help">
+                <i className="bi bi-question-circle-fill"></i>
+                <p>Contact Us</p>
+            </Link>
         </aside>
 
     );
