@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 
+import { useNavigate } from "react-router-dom";
 import { sendForm } from "@emailjs/browser";
 
 import "../../globals/globals.css";
-import { useNavigate } from "react-router-dom";
 
 export default function ContactUs () {
     const [name, setName] = useState<string>("");
