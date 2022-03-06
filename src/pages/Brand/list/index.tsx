@@ -87,7 +87,7 @@ export default function BrandList() {
             setData(data.slice(((ev.selected + 1) * numPerPages), ((ev.selected + 2) * numPerPages)));
 
         if (ev.isPrevious) 
-            setData(data.slice(((ev.selected - 1)* numPerPages), (ev.selected * numPerPages))); 
+            setData(data.slice(((ev.selected - 1) * numPerPages), (ev.selected * numPerPages))); 
 
         if (!ev.isNext && !ev.isPrevious)
             setData(data.slice(((ev.nextSelectedPage || 0) * numPerPages), (((ev.nextSelectedPage || 0) + 1) * numPerPages)));

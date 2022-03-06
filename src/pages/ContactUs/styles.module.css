@@ -73,19 +73,33 @@
 
 }
 
-.containerButtons {
+.containerButtons, .containerAux {
     display: flex;
 
     justify-content: flex-end;
     align-items: center;
 
     height: 60px;
-    width: 100%;
 
     padding: 20px;
     padding-right: 0;
 
     margin-top: 3px;
+
+}
+
+.containerAux {
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 0;
+
+    width: 100%;
+
+}
+
+.btnCancel {
+    background-color: #F00A;
 
 }
 

@@ -3,14 +3,14 @@ import React from 'react';
 import "./globals/reset.css";
 import "./globals/globals.css";
 
-import Header from './components/Header';
+// import Header from './components/Header';
 import Menu from './components/Menu';
 import Routers from './routes';
 
 function App() {
   return (
     <div style={{height: "100vh"}}>
-      <Header />
+      {/* <Header /> */}
       <Menu />
       <Routers />
     </div>
